@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ACCESORIOS</title>
 
@@ -12,74 +13,96 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet" />
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
   <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
+  <div id="grilla">
   <header class="header">
     <img src="../imagenes/logoo.png" alt="logo" width="96.49" height="65" />
 
     <form action="../../form-result.php" method="post" target="_self">
       <div>
         <input type="search" name="buscarproducto" placeholder="Buscar productos..." />
-        <input type="submit" class="ingresar" value="Buscar" />
+        <input type="submit" class="ingresar btn btn-light" value="Buscar" />
       </div>
     </form>
   </header>
 
-  <ul class="list">
-    <li><a href="../index.html">INICIO</a></li>
-    <li><a href="indumentaria.html">INDUMENTARIA</a></li>
-    <li><a href="calzado.html">CALZADO</a></li>
-    <li><a href="accesorios.html">ACCESORIOS</a></li>
-    <li><a href="entraORregistrate.html">ENTRA O REGISTRATE</a></li>
-  </ul>
+      <nav class="border">
+        <div>
 
-  <img class="product" src="../accesorios/accesorio1.webp" alt="Gorro" />
-  <br />
-  <b>Gorro</b>
-  <br />
-  <p>$490</p>
-  <br />
-  <button class="boton">Comprar</button>
-  <br />
+          <ul class="list">
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="indumentaria.html">INDUMENTARIA</a></li>
+            <li><a href="calzado.html">CALZADO</a></li>
+            <li><a href="accesorios.html">ACCESORIOS</a></li>
+            <li><a href="entraORregistrate.html">ENTRA O REGISTRATE</a></li>
+          </ul>
+        </div>
+      </nav>
 
-  <img class="product" src="../accesorios/anillo.webp" alt="anilloMetal" />
-  <br />
-  <b>Anillo Metal</b>
-  <br />
-  <p>$990</p>
-  <br />
-  <button class="boton">Comprar</button>
-  <br />
+  
 
-  <img class="product" src="../accesorios/anillo2.webp" alt="anilloCubierto" />
-  <br />
-  <b>Anillo Cubierto</b>
-  <br />
-  <p>$890</p>
-  <br />
-  <button class="boton">Comprar</button>
-  <br />
+   <div id="product">
+        <div class="mw">
+          <img class="product" src="../accesorios/accesorio1.webp" alt="Gorro" />
+  
+            <b class="mb h5">Gorro</b>
+  
+            <p class="mb">$490</p>
+  
+            <button class="boton">Comprar</button>
+        </div>
+  
 
-  <img class="product" src="../accesorios/cinto.webp" alt="cintoDif" />
-  <br />
-  <b>Cinto dif</b>
-  <br />
-  <p>$990</p>
-  <br />
-  <button class="boton">Comprar</button>
-  <br />
+        <div class="mb">
+          <img class="product" src="../accesorios/anillo.webp" alt="anilloMetal" />
+  
+          <b class="mb h5">Anillo Metal</b>
+  
+            <p class="mb">$990</p>
+  
+            <button class="boton">Comprar</button>
+        </div>        
+  
 
-  <img class="product" src="../accesorios/gorro bordado.webp" alt="gorroBordeado" />
-  <br />
-  <b>Gorro bordeado</b>
-  <br />
-  <p>$790</p>
-  <br />
-  <button class="boton">Comprar</button>
-  <br />
+      <div class="mb">
+        <img class="product" src="../accesorios/anillo2.webp" alt="anilloCubierto" />
+  
+        <b>Anillo Cubierto</b>
+  
+        <p>$890</p>
+  
+        <button class="boton">Comprar</button>
+      </div>
+  
+
+  
+        <div class="mb">
+          <img class="product" src="../accesorios/cinto.webp" alt="cintoDif" />
+          
+          <b>Cinto dif</b>
+          
+          <p>$990</p>
+          
+          <button class="boton">Comprar</button>
+          
+        </div>
+
+        <div class="mb">
+          <img class="product" src="../accesorios/gorro bordado.webp" alt="gorroBordeado" />
+          
+          <b>Gorro bordeado</b>
+          
+          <p>$790</p>
+          
+          <button class="boton">Comprar</button>
+          
+        </div>  
 
   <img class="product" src="../accesorios/guantes.webp" alt="Guantes" />
   <br />
@@ -126,7 +149,9 @@
   <button class="boton">Comprar</button>
   <br />
 
-  <footer>
+  <aside class="border">Aside</aside>
+
+  <footer class="border">
     <img src="../imagenes/logoo.png" alt="logo" width="96.49" height="65" />
     <p>Gracias por visitarnos!</p>
     <br />
@@ -137,6 +162,9 @@
     <a href="entraORregistrate.html">Entra o Registrate!</a>
     <br />
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
