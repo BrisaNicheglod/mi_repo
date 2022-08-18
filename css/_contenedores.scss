@@ -1,14 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  border: none;
-  outline: none;
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
 }
 
 body {
-  background: linear-gradient(45deg, #d4a373, white);
+  background: linear-gradient(45deg,#d4a373, white);
   margin: 0;
 }
 
@@ -30,9 +30,10 @@ b {
   margin-left: 12px;
 }
 
-.tendenciass {
-  font-size: 20px;
-  text-align: center;
+.tendenciass{
+  font-size: 20px; 
+  text-align: 
+  center
 }
 
 .header {
@@ -44,20 +45,20 @@ b {
 }
 
 .product {
-  grid-area: product;
+  grid-area:product ;
   max-width: 225px;
   border-radius: 8px;
   overflow: hidden;
   background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    flex-direction: column;
 }
 
-.product > img {
+.product>img {
   height: 70%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .boton {
@@ -70,14 +71,14 @@ b {
 }
 
 .h2 {
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", sans-serif
 }
 
 .lebel {
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", sans-serif
 }
 
-.list > li > a {
+.list>li>a {
   color: black;
   text-decoration: none;
   font-family: "Outfit", sans-serif;
@@ -89,12 +90,12 @@ b {
   font-weight: bold;
 }
 
-.mb {
+.mb{
   margin-bottom: 12px;
 }
 
-.mw {
-  max-width: 225px;
+.mw{
+  max-width: 225px
 }
 
 .padre {
@@ -107,21 +108,23 @@ b {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.as {
+.as{
   border: 1px solid;
 }
 
 header {
-  grid-area: header;
-  display: flex;
-  justify-content: flex-start;
-}
+    grid-area: header;
+    display: flex;
+    justify-content: flex-start;
+  }
 
 footer {
   grid-area: footer;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-around
+  
+
 }
 
 section #product {
@@ -145,48 +148,61 @@ aside {
   grid-template-columns: 20% auto 15%;
   grid-template-rows: 3% 1fr 1fr 2%;
   grid-template-areas: "header header header" "nav servicios publicidad" "nav productos publicidad" "footer footer footer";
-  -moz-column-gap: 5%;
-       column-gap: 5%;
+  column-gap: 5%;
   row-gap: 5%;
 }
 
-aside class border > Aside aside > #servicios {
+aside class border>Aside aside>
+#servicios {
   grid-area: servicios;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+      align-items: center;
+      justify-content: center;
+    
 }
 
 #product {
+  
+  
   justify-content: space-around;
   grid-area: productos;
   display: flex;
-  flex-direction: row;
+
+  flex-direction: row
+      
 }
 
-@media screen and (max-width: 525px) {
+
+@media screen and( max-width:525px) {
   body {
-    background: linear-gradient(45deg, #d4a373, white);
+    background: linear-gradient(45deg,#d4a373, white);
     margin: 0;
   }
+  
   center img {
     border: 3px solid #d4a373;
   }
+  
   li {
     list-style: none;
   }
+  
   p {
     font-family: "Outfit", sans-serif;
   }
+  
   b {
     font: size 18px;
     font-family: "Outfit", sans-serif;
     margin-left: 12px;
   }
-  .tendenciass {
-    font-size: 20px;
-    text-align: center;
+  
+  .tendenciass{
+    font-size: 20px; 
+    text-align: 
+    center
   }
+  
   .header {
     grid-area: header;
     display: flex;
@@ -194,21 +210,24 @@ aside class border > Aside aside > #servicios {
     height: 80px;
     background-color: #d4a373;
   }
+  
   .product {
-    grid-area: product;
+    grid-area:product ;
     max-width: 225px;
     border-radius: 8px;
     overflow: hidden;
     background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      flex-direction: column;
   }
-  .product > img {
+  
+  .product>img {
     height: 70%;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
+  
   .boton {
     border: none;
     background-color: #d4a373;
@@ -217,28 +236,35 @@ aside class border > Aside aside > #servicios {
     color: white;
     border-radius: 4px;
   }
+  
   .h2 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Outfit", sans-serif
   }
+  
   .lebel {
-    font-family: "Outfit", sans-serif;
+    font-family: "Outfit", sans-serif
   }
-  .list > li > a {
+  
+  .list>li>a {
     color: black;
     text-decoration: none;
     font-family: "Outfit", sans-serif;
     font-weight: bold;
   }
+  
   .ingresar {
     font-family: "Outfit", sans-serif;
     font-weight: bold;
   }
-  .mb {
+  
+  .mb{
     margin-bottom: 12px;
   }
-  .mw {
-    max-width: 225px;
+  
+  .mw{
+    max-width: 225px
   }
+  
   .padre {
     display: grid;
     grid-template-columns: 300px 100px 170px;
@@ -248,78 +274,90 @@ aside class border > Aside aside > #servicios {
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  .as {
+  
+  .as{
     border: 1px solid;
   }
+  
   header {
     grid-area: header;
     display: flex;
     justify-content: flex-start;
   }
+  
   footer {
     grid-area: footer;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around
+    
+  
   }
+  
   section #product {
     grid-area: product;
   }
+  
   section #servicios {
     grid-area: servicios;
   }
-  section #product {
-    grid-area: product;
+
+  section{
+            #product {
+                       grid-area: product;
+            
+            }
+
+            #sevicios {
+                grid-area: servicios;
+            }
   }
-  section #sevicios {
-    grid-area: servicios;
-  }
+  
   nav {
     grid-area: nav;
   }
+  
   aside {
     grid-area: publicidad;
   }
+  
   #grilla {
     display: grid;
     grid-template-columns: 20% auto 15%;
     grid-template-rows: 100px 1fr 1fr 75px;
     grid-template-areas: "header header header" "nav servicios publicidad" "nav productos publicidad" "footer footer footer";
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
     row-gap: 20px;
   }
+  
   #grillados {
     display: grid;
     grid-template-columns: 20% auto 15%;
     grid-template-rows: 100px 1fr 1fr 75px;
     grid-template-areas: "header header header" "nav servicios publicidad" "nav productos publicidad" "footer footer footer";
-    -moz-column-gap: 20%;
-         column-gap: 20%;
+    column-gap: 20%;
     row-gap: 20%;
   }
+  
   #servicios {
     grid-area: servicios;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+        align-items: center;
+        justify-content: center;
+      
   }
+  
   #product {
+    
+    
     justify-content: space-around;
     grid-area: productos;
     display: flex;
-    flex-direction: row;
+  
+    flex-direction: row
+        
   }
-}
-/*Bucle for*/
-.color1 {
-  background-color: rgba(208, 189, 70, 0.536);
+  
 }
 
-.color2 {
-  background-color: white;
-}
 
-.color3 {
-  background-color: black;
-}/*# sourceMappingURL=style.css.map */
