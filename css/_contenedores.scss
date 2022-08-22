@@ -50,6 +50,7 @@ b {
   border-radius: 8px;
   overflow: hidden;
   background-color: white;
+  justify-content: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     flex-direction: column;
@@ -100,10 +101,7 @@ b {
 
 .padre {
   display: grid;
-  grid-template-columns: 300px 100px 170px;
-  grid-template-rows: 40px 100px;
-  grid-template-columns: 2fr 3fr 1fr;
-  grid-template-rows: 4fr 1fr;
+  
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(2, 1fr);
 }
@@ -129,6 +127,7 @@ footer {
 
 section #product {
   grid-area: product;
+  justify-content: space-around;
 }
 
 section #servicios {
@@ -152,12 +151,25 @@ aside {
   row-gap: 5%;
 }
 
+#grillados {
+  display: grid;
+  grid-template-columns: 20% auto 15%;
+  grid-template-rows: 3% 1fr 1fr 2%;
+  grid-template-areas: "header header header" "nav productos publicidad" "nav productos publicidad" "footer footer footer";
+  column-gap: 5%;
+  row-gap: 5%;
+}
+
+aside { grid-area: publicidad;}
 aside class border>Aside aside>
 #servicios {
+  
+
+  justify-content: space-around;
   grid-area: servicios;
-  flex-direction: row;
-      align-items: center;
-      justify-content: center;
+  display: flex;
+    
+    
     
 }
 
@@ -167,6 +179,10 @@ aside class border>Aside aside>
   justify-content: space-around;
   grid-area: productos;
   display: flex;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,200px);
 
   flex-direction: row
       
@@ -267,10 +283,7 @@ aside class border>Aside aside>
   
   .padre {
     display: grid;
-    grid-template-columns: 300px 100px 170px;
-    grid-template-rows: 40px 100px;
-    grid-template-columns: 2fr 3fr 1fr;
-    grid-template-rows: 4fr 1fr;
+    
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(2, 1fr);
   }

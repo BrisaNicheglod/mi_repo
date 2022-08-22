@@ -241,10 +241,6 @@ aside class border > Aside aside > #servicios {
   }
   .padre {
     display: grid;
-    grid-template-columns: 300px 100px 170px;
-    grid-template-rows: 40px 100px;
-    grid-template-columns: 2fr 3fr 1fr;
-    grid-template-rows: 4fr 1fr;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(2, 1fr);
   }
