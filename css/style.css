@@ -7,6 +7,8 @@
   outline: none;
 }
 
+
+
 body {
   background: linear-gradient(45deg, #d4a373, white);
   margin: 0;
@@ -35,12 +37,32 @@ b {
   text-align: center;
 }
 
+.input{
+  border: none;
+    width: 300px;
+    height: 45px;
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-left: 140px;
+}
+
+.input-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  margin-left: 0;
+}
+
 .header {
   grid-area: header;
   display: flex;
   padding: 0 24px;
   height: 80px;
   background-color: #d4a373;
+  align-items: center;
 }
 
 .product {
@@ -53,11 +75,11 @@ b {
   flex-direction: column;
 }
 
-.product > img {
+.product>img {
   height: 70%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .boton {
@@ -77,7 +99,7 @@ b {
   font-family: "Outfit", sans-serif;
 }
 
-.list > li > a {
+.list>li>a {
   color: black;
   text-decoration: none;
   font-family: "Outfit", sans-serif;
@@ -87,6 +109,7 @@ b {
 .ingresar {
   font-family: "Outfit", sans-serif;
   font-weight: bold;
+  margin-bottom: 12px;
 }
 
 .mb {
@@ -143,14 +166,12 @@ aside {
 #grilla {
   display: grid;
   grid-template-columns: 20% auto 15%;
-  grid-template-rows: 3% 1fr 1fr 2%;
-  grid-template-areas: "header header header" "nav servicios publicidad" "nav productos publicidad" "footer footer footer";
-  -moz-column-gap: 5%;
-       column-gap: 5%;
-  row-gap: 5%;
+  grid-template-rows: 80px auto auto 80px;
+  grid-template-areas: "header header header""nav servicios publicidad""nav productos publicidad""footer footer footer";
+  grid-gap: 28px;
 }
 
-aside class border > Aside aside > #servicios {
+aside class border>Aside aside>#servicios {
   grid-area: servicios;
   flex-direction: row;
   align-items: center;
@@ -162,6 +183,7 @@ aside class border > Aside aside > #servicios {
   grid-area: productos;
   display: flex;
   flex-direction: row;
+  margin-bottom: 12px;
 }
 
 @media screen and (max-width: 525px) {
@@ -169,24 +191,30 @@ aside class border > Aside aside > #servicios {
     background: linear-gradient(45deg, #d4a373, white);
     margin: 0;
   }
+
   center img {
     border: 3px solid #d4a373;
   }
+
   li {
     list-style: none;
   }
+
   p {
     font-family: "Outfit", sans-serif;
   }
+
   b {
     font: size 18px;
     font-family: "Outfit", sans-serif;
     margin-left: 12px;
   }
+
   .tendenciass {
     font-size: 20px;
     text-align: center;
   }
+
   .header {
     grid-area: header;
     display: flex;
@@ -194,6 +222,7 @@ aside class border > Aside aside > #servicios {
     height: 80px;
     background-color: #d4a373;
   }
+
   .product {
     grid-area: product;
     max-width: 225px;
@@ -203,12 +232,14 @@ aside class border > Aside aside > #servicios {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     flex-direction: column;
   }
-  .product > img {
+
+  .product>img {
     height: 70%;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
+
   .boton {
     border: none;
     background-color: #d4a373;
@@ -217,96 +248,108 @@ aside class border > Aside aside > #servicios {
     color: white;
     border-radius: 4px;
   }
+
   .h2 {
     font-family: "Outfit", sans-serif;
   }
+
   .lebel {
     font-family: "Outfit", sans-serif;
   }
-  .list > li > a {
+
+  .list>li>a {
     color: black;
     text-decoration: none;
     font-family: "Outfit", sans-serif;
     font-weight: bold;
   }
+
   .ingresar {
     font-family: "Outfit", sans-serif;
     font-weight: bold;
   }
+
   .mb {
     margin-bottom: 12px;
   }
+
   .mw {
     max-width: 225px;
   }
+
   .padre {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
   .as {
     border: 1px solid;
   }
+
   header {
     grid-area: header;
     display: flex;
     justify-content: flex-start;
   }
+
   footer {
     grid-area: footer;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+
   section #product {
     grid-area: product;
   }
+
   section #servicios {
     grid-area: servicios;
   }
+
   section #product {
     grid-area: product;
   }
+
   section #sevicios {
     grid-area: servicios;
   }
+
   nav {
     grid-area: nav;
   }
+
   aside {
     grid-area: publicidad;
   }
+
   #grilla {
     display: grid;
     grid-template-columns: 20% auto 15%;
-    grid-template-rows: 100px 1fr 1fr 75px;
-    grid-template-areas: "header header header" "nav servicios publicidad" "nav productos publicidad" "footer footer footer";
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-    row-gap: 20px;
+    grid-template-rows: 80px auto auto 80px;
+    grid-template-areas: "header header header""nav servicios publicidad""nav productos publicidad""footer footer footer";
+    grid-gap: 28px;
   }
-  #grillados {
-    display: grid;
-    grid-template-columns: 20% auto 15%;
-    grid-template-rows: 100px 1fr 1fr 75px;
-    grid-template-areas: "header header header" "nav servicios publicidad" "nav productos publicidad" "footer footer footer";
-    -moz-column-gap: 20%;
-         column-gap: 20%;
-    row-gap: 20%;
+
+  .product-cont {
+    grid-area: productos;
   }
+
   #servicios {
     grid-area: servicios;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
+
   #product {
     justify-content: space-around;
-    grid-area: productos;
     display: flex;
     flex-direction: row;
   }
 }
+
 /*Bucle for*/
 .color1 {
   background-color: rgba(208, 189, 70, 0.536);
@@ -318,4 +361,6 @@ aside class border > Aside aside > #servicios {
 
 .color3 {
   background-color: black;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
